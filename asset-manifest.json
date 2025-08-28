@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/IbrahimAsad/static/css/main.10f5b06d.css",
+    "main.js": "/IbrahimAsad/static/js/main.99586c88.js",
+    "static/js/453.f60067e3.chunk.js": "/IbrahimAsad/static/js/453.f60067e3.chunk.js",
+    "static/media/nyu.png": "/IbrahimAsad/static/media/nyu.a378838c06fa21dc3d95.png",
+    "static/media/uni.png": "/IbrahimAsad/static/media/uni.6f748ee394f966807dbc.png",
+    "static/media/Shopify.png": "/IbrahimAsad/static/media/Shopify.dd809bb7260991a6d6e4.png",
+    "index.html": "/IbrahimAsad/index.html",
+    "main.10f5b06d.css.map": "/IbrahimAsad/static/css/main.10f5b06d.css.map",
+    "main.99586c88.js.map": "/IbrahimAsad/static/js/main.99586c88.js.map",
+    "453.f60067e3.chunk.js.map": "/IbrahimAsad/static/js/453.f60067e3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10f5b06d.css",
+    "static/js/main.99586c88.js"
+  ]
+}
