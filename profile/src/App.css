@@ -84,3 +84,41 @@
     transform: rotate(360deg);
   }
 }
+
+.ProjectButton {
+  width: 20vw;
+  height: 55vh;
+  box-shadow: 5em;
+  /* background-color: #a1e02c; */
+  border-radius: 5%;
+  font-size: 4w;
+  font-family: Arial, Helvetica, sans-serif;
+  color: Black;
+  font-weight: bolder;
+  overflow: hidden; /* This ensures the image stays within the rounded corners */
+  display: flex; /* Using flex for easy centering */
+  flex-direction: column;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  padding-right: 1;
+}
+
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 50% 50%;       /* Pivot around the bottom-left palm */
+
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(7.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-4.0deg) }
+   30% { transform: rotate(7.0deg) }
+   40% { transform: rotate(-2.0deg) }
+   50% { transform: rotate(2.5deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}

@@ -1,14 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import nyu from './images/nyu.png';
-import cmg from './images/cmg.png'; 
-import schulich from './images/schulich.png'; 
-import toronto from './images/toronto.png';
-import { CCarousel, CCarouselItem, CImage } from '@coreui/react'
-import { motion } from "motion/react"
+import Shopify from './images/Shopify.png'
+import Uni from './images/uni.png'
+import Pokemon from './images/Pokemon.png'
 import './App.css';
+import ProjectButtonPage from './Button';
+
 
 function App() {
+
+  const UofC = "Developed a Web Application that can read any researcher's biography from any source and continuously finds grants globally from a single database that relates to any professor’s line of research using Machine Learning. Developed a Support Vector Model (SVM) using tools such as Keybert, created the Front End of the Project, which was later connected to the Model for the University of Calgary Research Funding Department."
+  const Shops = "Developed a Shopify Application that can read the customers cart information, current products, and overall store’s history to create personalized experiences and offers to increase pre checkout sales by utilizing JavaScript, Python, Machine Learning, and GraphQL on a cloud-based serverless AWS architecture."
+  const PokemonAgent = "Currently Developing an Agent that learns and behaves using Reinforcement Learning to complete Pokemon Red and Blue. The Agent has no history on what actions are correct and will have to learn them through Reinforcement Learning utilizing OpenAI's Gymnasium."
   return (
     <div className="App">
       <header className="App-header">
@@ -24,12 +27,20 @@ function App() {
               Software Engineer, Biomedical Engineer
               <br />
               C/C++, Python, Java, TypeScript, JavaScript, AWS
+              < br />
+               <a
+                      className="App-link"
+                      href="https://github.com/ibrahim29asad"
+                      target="_blank"
+                      rel="noopener noreferrer"> 
+                      GitHub
+                  </a> 
             </small>
           </div>
           
 
           <div className='container'>
-            <div className='bodyText'>
+            <div className='bodyText' style={{marginRight: '2%'}}>
               <text>
                 
 
@@ -52,9 +63,9 @@ function App() {
                 </b>
 
                 <ul>
-                  <li>I completed a <b>BSc in Software Engineering and Biomedical Engineering</b> from the <b>University of Calgary</b></li>
                   <li>I am currently a <b>MSc Student</b> at <b>NYU</b> for <b>Computer Science in AI/ML 
                 (Artificial Intelligence/Machine Learning)</b></li>
+                  <li>I completed a <b>BSc in Software Engineering and Biomedical Engineering</b> from the <b>University of Calgary</b></li>              
                   <li>I completed a 16-month long internship at 
                       {' '}  <a
                       className="App-link"
@@ -81,12 +92,31 @@ function App() {
             </div>
           </div>
 
-          <div className= 'projects'>
-  
+          <div className= 'projects-tab'>
+            
+              <text>
+                <br /><br />
+                <b style={{ fontSize: 'calc(10px + 2vmin)' }}>
+                  Projects:
+                </b>                
+                <br />
+                <br />
+              </text>
+
+           
+                <div style={{ display: "flex", flexDirection: 'row', gap: '7rem'}}>
+                <ProjectButtonPage OuterText={"UofC x IFARM"} OuterColour={"#FFFFCC"} OuterImage={Uni} InnerText={UofC} />
+                <ProjectButtonPage OuterText={"Shopify"} OuterColour={"#a1e02c"} OuterImage={Shopify}  InnerText={Shops} />
+                <ProjectButtonPage OuterText={"Machine Learning "} OuterColour={"#e12626ff"} OuterImage={Pokemon}  InnerText={PokemonAgent}/>
+                {/* <ProjectButtonPage OuterText={"Pokemon"} /> */}
+                </div>
+                
+            
     
           </div>
-          
-          <div className= 'Contact'>
+
+          <div className= 'Contact' style={{marginBottom: '3%'}}>
+          <br />
           <b style={{ fontSize: 'calc(5px + 2vmin)' }}>
                 Contact:
           </b> 
